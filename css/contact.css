@@ -1,0 +1,128 @@
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+select,
+textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+    font-family: inherit;
+}
+
+textarea {
+    resize: vertical;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+.form-container {
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    max-width: 600px;
+    padding: 30px;
+}
+
+.back-home {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #fff;
+    background-color: #3ccb4d;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+}
+
+.back-home:hover {
+    background-color: #2a8b36;
+}
+
+h2 {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+button {
+    border: none;
+    border-radius: 4px;
+    flex: 1;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    padding: 12px;
+    font-size: 16px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+    display: block;
+    font-weight: 600;
+}
+
+.radio-group, .checkbox-group {
+    gap: 15px;
+    margin-top: 5px;
+    display: flex;
+}
+
+.radio-group label, .checkbox-group label {
+    font-weight: normal;
+    align-items: center;
+    display: inline-flex;
+    gap: 5px;
+}
+
+button[type="submit"] {
+    color: white;
+    background-color: #3ccb4d;
+}
+
+button[type="submit"]:hover {
+    background-color: #2a8b36;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin: 0;
+}
+
+input[type="file"] {
+    padding: 5px;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button[type="reset"] {
+    background-color: #e74c3c;
+    color: white;
+}
+
+button[type="reset"]:hover {
+    background-color: #9a3226;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Welcome!</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <header>
+            <button class="menu-button" id="menuButton">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="welcome">
+                <div>Welcome!</div>
+            </div>
+
+            <a href="contact-us.html" class="header-contact"><img src="assets/phone.svg" class="nav-icon-header" alt=""> Contact Us</a>
+        </header>
+
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-title"><img src="assets/telescope.svg" class="nav-icon" alt="">EXPLORE</div>
+        
+            <a href="index.html"><img src="assets/house.svg" class="nav-icon" alt=""> Home</a>
+            <a href="about-us.html"><img src="assets/info.svg" class="nav-icon" alt=""> About Us</a>
+            <a href="gallery.html"><img src="assets/image.svg" class="nav-icon" alt=""> Gallery</a>
+            <a href="services.html"><img src="assets/concierge-bell.svg" class="nav-icon" alt=""> Our Services</a>
+        </aside>
+        
+                <main>
+                    <section class="hero">
+                        <div class="hero-content">
+                            <div class="small-label">IGBARAS • ILOILO</div>
+        
+                            <h2>Welcome to</h2>
+        
+                            <h1>Imbalayan<br>Binanua-an Igbaras</h1>
+        
+                            <h2>Resort</h2>
+        
+                            <div class="description">
+                                A mountainous campsite and resort in Igbaras.
+                            </div>
+        
+                            <div class="hero-button">
+                                <a href="about-us.html">check us out!</a>
+                            </div>
+                        </div>
+                    </section>
+        
+                    <section class="info-section">
+                        <div class="section-heading">
+                            <span>01</span>
+                            <h2>Experience Nature</h2>
+                        </div>
+        
+                        <div class="image-grid">
+                            <div class="image-card large">
+                                <img src="assets/A4.JPG" alt="Mountain in Igbaras">
+                                <div class="image-text">
+                                    <span>IGBARAS</span>
+                                    <h3>Mountain Views</h3>
+                                </div>
+                            </div>
+        
+                            <div class="image-card">
+                                <img src="assets/A5.jpg" alt="Tangyan River in Igbaras">
+                                <div class="image-text">
+                                    <span>TANGYAN RIVER</span>
+                                    <h3>Into the Wild</h3>
+                                </div>
+                            </div>
+        
+                            <div class="nature-box">
+                                <div class="nature-icon">✦</div>
+                                <h3>Escape the ordinary.</h3>
+                                <p>
+                                    Relax, explore, and reconnect with the mountains
+                                    and natural surroundings of Binanua-an.
+                                </p>
+                                <a href="#">discover more</a>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+
+        <footer>
+            <h2>Check out our other stuff!</h2>
+
+            <p>
+                &copy; 2026 Binanua-an Eco Camp, Igbaras, Iloilo.
+                All rights reserved.
+            </p>
+
+            <div class="socials">
+                <a href="https://www.facebook.com/Binanuaanecofarm/" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/A1.png" alt="Facebook">
+                </a>
+
+                <a href="https://www.youtube.com/watch?v=aeQojySfJEA/" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/A2.png" alt="YouTube">
+                </a>
+
+                <a href="https://www.google.com/maps/place/Imbalayan+binanua-an+igbaras+resort/@10.7378052,122.224213,13.26z/data=!4m6!3m5!1s0x33ae51737d3b9097:0x54186dad46b9d68!8m2!3d10.7543418!4d122.2387204!16s%2Fg%2F11h4k6rx_f!18m1!1e3?entry=ttu" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/A3.png" alt="Google Maps">
+                </a>
+            </div>
+        </footer>
+
+    <script>
+    const menuButton = document.getElementById("menuButton");
+    const sidebar = document.getElementById("sidebar");
+
+    menuButton.addEventListener("click", () => {
+        sidebar.classList.toggle("open");
+    });
+
+    document.addEventListener("click", (event) => {
+        if (
+            sidebar.classList.contains("open") &&
+            !sidebar.contains(event.target) &&
+            !menuButton.contains(event.target)
+        ) {
+            sidebar.classList.remove("open");
+        }
+    });
+    </script>
+    </body>
+</html>

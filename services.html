@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products, Services & Booking - Binanua-an Eco Camp</title>
+    <link rel="stylesheet" href="css/services.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        
+        <header class="header">
+            <button class="menu-button" id="menuButton">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="welcome">
+                <div>Our Offers</div>
+            </div>
+
+            <a href="contact-us.html" class="header-contact"><img src="assets/phone.svg" class="nav-icon-header" alt=""> Contact Us</a>
+        </header>
+
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-title"><img src="assets/telescope.svg" class="nav-icon" alt="">EXPLORE</div>
+        
+            <a href="index.html"><img src="assets/house.svg" class="nav-icon" alt=""> Home</a>
+            <a href="about-us.html"><img src="assets/info.svg" class="nav-icon" alt=""> About Us</a>
+            <a href="gallery.html"><img src="assets/image.svg" class="nav-icon" alt=""> Gallery</a>
+            <a href="services.html"><img src="assets/concierge-bell.svg" class="nav-icon" alt=""> Our Services</a>
+        </aside>
+
+        <section class="split-hero">
+            <div class="hero-text">
+                <h1>Camp Rates & Local Kitchen</h1>
+                <p>Experience the raw mountain vistas of Igbaras, authentic local farm dining, and our off-grid natural pools.</p>
+                <div class="hero-anchors">
+                    <a href="#main" class="btn btn-primary">Rates & Booking</a>
+                    <a href="#kitchen-section" class="btn">Farm Menu</a>
+                </div>
+            </div>
+
+        </section>
+
+        <main id="main" class="services-main">
+            <section class="booking-wrapper">
+                
+                <div class="rates-panel">
+                    <h2>Camp Rates & Fees</h2>
+                    <p class="notice">No corkage fee, but please bring your own utensils.</p>
+                    
+                    <div class="rate-list">
+                        <div class="rate-item">
+                            <h4><img src="assets/waves-horizontal.svg" alt="" width="16"> Entrance w/ Swimming</h4>
+                            <p>Day: ₱50 | Overnight: ₱100 (per pax)</p>
+                        </div>
+                        <div class="rate-item">
+                            <h4><img src="assets/house-plus.svg" alt="" width="16"> Mini Cottage (4-5 paxes)</h4>
+                            <p>Day: ₱300 | Overnight: ₱700</p>
+                        </div>
+                        <div class="rate-item">
+                            <h4><img src="assets/house-heart.svg" alt="" width="16"> Big Cottage / Villa (15-20 paxes)</h4>
+                            <p>Day: ₱1,500 | Overnight: ₱2,500</p>
+                        </div>
+                        <div class="rate-item">
+                            <h4><img src="assets/tent.svg" alt="" width="16"> Bring your own tent</h4>
+                            <p>₱150 per pax</p>
+                        </div>
+                        <div class="rate-item">
+                            <h4><img src="assets/armchair.svg" alt="" width="16"> Open-air Tables (4-5 paxes)</h4>
+                            <p>₱50</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-panel">
+                    <h2>Direct Reservation</h2>
+                    <form action="#" method="POST" enctype="multipart/form-data">
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label><img src="assets/user.svg" alt="" width="14"> Full Name *</label>
+                                <input type="text" name="fullname" placeholder="Juan Dela Cruz" required>
+                            </div>
+                            <div class="form-group">
+                                <label><img src="assets/phone.svg" alt="" width="14"> Mobile Phone *</label>
+                                <input type="tel" name="phone" placeholder="09123456789" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label><img src="assets/user-round-group.svg" alt="" width="14"> Total Guests *</label>
+                                <input type="number" name="guests" min="1" max="50" value="1" required>
+                            </div>
+                            <div class="form-group">
+                                <label><img src="assets/calendar-check.svg" alt="" width="14"> Check-in Date *</label>
+                                <input type="date" name="date" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label><img src="assets/hourglass.svg" alt="" width="14"> Estimated Arrival *</label>
+                                <input type="time" name="time" required>
+                            </div>
+                            <div class="form-group">
+                                <label><img src="assets/wallet.svg" alt="" width="14"> Mode of Payment *</label>
+                                <select name="payment" required>
+                                    <option value="cash">Cash on Arrival</option>
+                                    <option value="gcash">GCash</option>
+                                    <option value="bank">Bank Transfer</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label>Stay Choice *</label>
+                            <div class="options-group">
+                                <label><input type="radio" name="stay" value="day" checked> Day Tour Pass</label>
+                                <label><input type="radio" name="stay" value="tent"> Tent Pitching</label>
+                                <label><input type="radio" name="stay" value="cottage"> Cottage</label>
+                                <label><input type="radio" name="stay" value="villa"> Villa</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label><img src="assets/circle-ellipsis.svg" alt="" width="14"> Optional Add-ons</label>
+                            <div class="options-group">
+                                <label><img src="assets/flame-kindling.svg" alt="" width="14"><input type="checkbox" name="addons" value="bonfire"> Bonfire Setup</label>
+                                <label><img src="assets/armchair.svg" alt="" width="14"><input type="checkbox" name="addons" value="stone_table"> Open-air Stone Table</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <details class="preorder-dropdown">
+                                <summary class="dropdown-trigger"><img src="assets/utensils-crossed.svg" alt="" width="14"> Pre-order Kitchen Meals & Soups (Optional)</summary>
+                                <div class="preorder-container">
+                                    <div class="preorder-item">
+                                        <label> Native Fried Chicken</label>
+                                        <input type="number" name="qty_chicken" min="1" placeholder="Qty">
+                                    </div>
+                                    <div class="preorder-item">
+                                        <label> Fried Tilapia & Rice</label>
+                                        <input type="number" name="qty_tilapia" min="1" placeholder="Qty">
+                                    </div>
+                                    <div class="preorder-item">
+                                        <label> Crispy Calamares</label>
+                                        <input type="number" name="qty_calamares" min="1" placeholder="Qty">
+                                    </div>
+                                    <div class="preorder-item">
+                                        <label> KBL (Kadyos, Baboy, Langka)</label>
+                                        <input type="number" name="qty_kbl" min="1" placeholder="Qty">
+                                    </div>
+                                    <div class="preorder-item">
+                                        <label> Classic Pork Sinigang</label>
+                                        <input type="number" name="qty_sinigang" min="1" placeholder="Qty">
+                                    </div>
+                                    <div class="preorder-item">
+                                        <label>Special Batchoy</label>
+                                        <input type="number" name="qty_batchoy" min="1" placeholder="Qty">
+                                    </div>
+                                    <div class="preorder-item">
+                                        <label> Dragon Fruit Juice</label>
+                                        <input type="number" name="qty_df_juice" min="1" placeholder="Qty">
+                                    </div>
+                                    <div class="preorder-item">
+                                        <label> Fresh Buko</label>
+                                        <input type="number" name="qty_buko" min="1" placeholder="Qty">
+                                    </div>
+                                    <div class="preorder-item">
+                                        <label> Coca-Cola Products</label>
+                                        <input type="number" name="qty_coke" min="1" placeholder="Qty">
+                                    </div>
+                                    <div class="preorder-item">
+                                        <label> Farm Halo-halo</label>
+                                        <input type="number" name="qty_halohalo" min="1" placeholder="Qty">
+                                    </div>
+                                    <div class="preorder-item">
+                                        <label> Mais con Yelo</label>
+                                        <input type="number" name="qty_mais" min="1" placeholder="Qty">
+                                    </div>
+                                    <div class="preorder-item">
+                                        <label> Fresh Dragon Fruit Slice</label>
+                                        <input type="number" name="qty_df_slice" min="1" placeholder="Qty">
+                                    </div>
+                                </div>
+                            </details>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label>Special Requests</label>
+                            <textarea name="requests" rows="3" placeholder="Any specific setup or dietary needs?"></textarea>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label><img src="assets/file-up.svg" alt="" width="14"> Proof of ID Upload for Verification *</label>
+                            <input type="file" name="id_proof" accept="image/*,.pdf" required class="file-input">
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn-submit"><img src="assets/send.svg" alt="" width="16" class="icon-white"> Submit Reservation</button>
+                            <button type="reset" class="btn-reset"><img src="assets/refresh-ccw.svg" alt="" width="16"> Reset Form</button>
+                        </div>
+                    </form>
+                </div>
+
+            </section>
+
+            <section id="kitchen-section">
+                <div class="section-header">
+                    <h2>Local Farm Kitchen</h2>
+                    <p>Authentic Filipino entrees, traditional soups, fresh fruit refreshments, and local desserts.</p>
+                </div>
+                
+                <h3 class="menu-category-title"><img src="assets/utensils.svg" alt="" width="16"> Main Dishes</h3>
+                <div class="kitchen-grid">
+                    <div class="kitchen-card">
+                        <img src="assets/native chicken.jpeg" alt="Native Fried Chicken">
+                        <div class="kitchen-details">
+                            <h3>Native Fried Chicken</h3>
+                            <span class="price">₱250 / platter</span>
+                            <p>Local free-range chicken, deep-fried to crispy perfection.</p>
+                        </div>
+                    </div>
+
+                    <div class="kitchen-card">
+                        <img src="assets/tilapia.jpeg" alt="Fried Tilapia">
+                        <div class="kitchen-details">
+                            <h3>Fried Tilapia & Rice</h3>
+                            <span class="price">₱180 / serving</span>
+                            <p>Fresh local catch, pan-fried golden brown with garlic rice.</p>
+                        </div>
+                    </div>
+
+                    <div class="kitchen-card">
+                        <img src="assets/calamares.jpeg" alt="Crispy Calamares">
+                        <div class="kitchen-details">
+                            <h3>Crispy Calamares</h3>
+                            <span class="price">₱120 / order</span>
+                            <p>Deep-fried battered squid rings with spicy local vinegar dip.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="menu-category-title"><img src="assets/soup.svg" alt="" width="16"> Traditional Soups</h3>
+                <div class="kitchen-grid">
+                    <div class="kitchen-card">
+                        <img src="assets/kbl.jpeg" alt="KBL Soup">
+                        <div class="kitchen-details">
+                            <h3>KBL (Kadyos, Baboy, Langka)</h3>
+                            <span class="price">₱220 / bowl</span>
+                            <p>Classic Ilonggo sour soup made with pigeon peas, pork leg, and green jackfruit.</p>
+                        </div>
+                    </div>
+
+                    <div class="kitchen-card">
+                        <img src="assets/sinigang.jpeg" alt="Pork Sinigang">
+                        <div class="kitchen-details">
+                            <h3>Classic Pork Sinigang</h3>
+                            <span class="price">₱240 / bowl</span>
+                            <p>Tamarind-based sour soup with tender pork belly, kangkong, and local vegetables.</p>
+                        </div>
+                    </div>
+
+                    <div class="kitchen-card">
+                        <img src="assets/batchoy.jpg" alt="Special Batchoy">
+                        <div class="kitchen-details">
+                            <h3>Special Batchoy</h3>
+                            <span class="price">₱110 / bowl</span>
+                            <p>Rich noodle soup served with crushed chicharon, pork offal, and rich savory stock.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="menu-category-title"><img src="assets/cup-soda.svg" alt="" width="16"> Beverages & Drinks</h3>
+                <div class="kitchen-grid">
+                    <div class="kitchen-card">
+                        <img src="assets/dragon-fruit-juice.jpg" alt="Dragon Fruit Juice">
+                        <div class="kitchen-details">
+                            <h3>Dragon Fruit Juice</h3>
+                            <span class="price">₱50 / glass</span>
+                            <p>Signature cold magenta blend, sweet and naturally refreshing.</p>
+                        </div>
+                    </div>
+
+                    <div class="kitchen-card">
+                        <img src="assets/buko.jpeg" alt="Fresh Buko">
+                        <div class="kitchen-details">
+                            <h3>Fresh Buko</h3>
+                            <span class="price">₱40 / whole</span>
+                            <p>Whole fresh young coconut, served straight from the husk.</p>
+                        </div>
+                    </div>
+
+                    <div class="kitchen-card">
+                        <img src="assets/coke.jpg" alt="Soft Drinks">
+                        <div class="kitchen-details">
+                            <h3>Coca-Cola Products</h3>
+                            <span class="price">₱30 / bottle</span>
+                            <p>Ice-cold assorted soft drinks to beat the heat.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="menu-category-title"><img src="assets/dessert.svg" alt="" width="16"> Desserts & Sweets</h3>
+                <div class="kitchen-grid">
+                    <div class="kitchen-card">
+                        <img src="assets/halo-halo.jpeg" alt="Halo-Halo">
+                        <div class="kitchen-details">
+                            <h3>Farm Halo-halo</h3>
+                            <span class="price">₱80 / glass</span>
+                            <p>Shaved ice dessert packed with sweet preserves, milk, and local fruits.</p>
+                        </div>
+                    </div>
+
+                    <div class="kitchen-card">
+                        <img src="assets/Mais-Con-Yelo-Recipe.jpg" alt="Mais con Yelo">
+                        <div class="kitchen-details">
+                            <h3>Mais con Yelo</h3>
+                            <span class="price">₱60 / glass</span>
+                            <p>Refreshing sweet corn, milk, and crushed ice perfect for sunny afternoons.</p>
+                        </div>
+                    </div>
+
+                    <div class="kitchen-card">
+                        <img src="assets/dragon-fruit-slice.jpeg" alt="Dragon Fruit">
+                        <div class="kitchen-details">
+                            <h3>Fresh Dragon Fruit Slice</h3>
+                            <span class="price">₱60 / plate</span>
+                            <p>Organically grown red dragon fruit sliced straight from our orchard.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2026 Binanua-an Eco Camp, Igbaras, Iloilo. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+    const menuButton = document.getElementById("menuButton");
+    const sidebar = document.getElementById("sidebar");
+
+    menuButton.addEventListener("click", () => {
+        sidebar.classList.toggle("open");
+    });
+
+    document.addEventListener("click", (event) => {
+        if (
+            sidebar.classList.contains("open") &&
+            !sidebar.contains(event.target) &&
+            !menuButton.contains(event.target)
+        ) {
+            sidebar.classList.remove("open");
+        }
+    });
+    </script>
+
+</body>
+</html>

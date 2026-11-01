@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us!</title>
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+<div class="form-container">
+    <a href="index.html" class="back-home"><img src="assets/undo-2.svg" alt="" width="16"> Back to Home</a>
+    <h2>Contact Us</h2>
+        <form action="#" method="POST">
+            
+        <div class="form-group">
+            <label for="fullname">Enter First Name</label>
+            <input type="text" id="fullname" name="fullname" placeholder="John" required>
+        </div>
+
+        <div class="form-group">
+            <label for="fullname">Enter Middle Name</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Pihh" required>
+        </div>
+
+        <div class="form-group">
+            <label for="fullname">Enter Last Name</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Marston" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="john3214@gmail.com" required>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Enter Account Password</label>
+            <input type="password" id="password" name="password" placeholder="********" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" required>
+        </div>
+
+        <div class="form-group">
+            <label for="subject">Reason for Inquiry</label>
+            <select id="subject" name="subject" required>
+                <option value="" disabled selected>Select a reason...</option>
+                <option value="general">General Question</option>
+                <option value="support">Technical Support</option>
+                <option value="billing">Billing Issue</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Please write your inquiry here..." required></textarea>
+        </div>
+
+        <div class="form-group">
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="terms" required> I agree to the Terms and Conditions</label>
+            </div>
+        </div>
+
+        <div class="button-group">
+            <button type="submit">Submit Form</button>
+            <button type="reset">Reset Form</button>
+        </div>
+
+    </form>
+</div>
+</body>
+</html>

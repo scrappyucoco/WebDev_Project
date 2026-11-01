@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Binanua-an Eco Camp</title>
+    <link rel="stylesheet" href="css/gallery.css">
+</head>
+<body>
+    <div class="page-wrapper">
+
+        <header class="header">
+            <button class="menu-button" id="menuButton">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="welcome">
+                <div>Eco-Gallery</div>
+            </div>
+
+            <a href="contact-us.html" class="header-contact"><img src="assets/phone.svg" class="nav-icon-header" alt=""> Contact Us</a>
+        </header>
+
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-title"><img src="assets/telescope.svg" class="nav-icon" alt="">EXPLORE</div>
+        
+            <a href="index.html"><img src="assets/house.svg" class="nav-icon" alt=""> Home</a>
+            <a href="about-us.html"><img src="assets/info.svg" class="nav-icon" alt=""> About Us</a>
+            <a href="gallery.html"><img src="assets/image.svg" class="nav-icon" alt=""> Gallery</a>
+            <a href="services.html"><img src="assets/concierge-bell.svg" class="nav-icon" alt=""> Our Services</a>
+        </aside>
+
+        <div class="banner">
+            <h1>Camp Visual Gallery</h1>
+            <p>Explore the raw mountain vistas, natural pools, and off-grid setup of Igbaras.</p>
+        </div>
+        <div class="gallery-overlay"></div>
+        <div class="gallery-main">
+            <div class="gallery-container">
+                
+                <div class="gallery-card">
+                    <img src="assets/8.jpg" alt="Mountain View">
+                    <div class="gallery-caption">Morning mist settling over the Igbaras mountain range.</div>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="assets/12.jpg" alt="Tree House">
+                    <div class="gallery-caption">Scenic view from the tree house, overlooking the lush fields.</div>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="assets/3.jpg" alt="Nipa Cottages">
+                    <div class="gallery-caption">Traditional bamboo Nipa cottages lit by solar lights.</div>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="assets/4.jpg" alt="Sundown">
+                    <div class="gallery-caption">Unpolluted dark skies perfect for night stargazing.</div>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="assets/31.jpg" alt="Stress Free Zone">
+                    <div class="gallery-caption">Guests exploring natural mountain streams and trails.</div>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="assets/13.jpg" alt="Bonfire">
+                    <div class="gallery-caption">Warm evening bonfire setup under clear highland skies.</div>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="assets/22.jpg" alt="Local Cuisine">
+                    <div class="gallery-caption">Fresh native dishes served in eco-friendly packaging.</div>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="assets/30.jpg" alt="Offline">
+                    <div class="gallery-caption">Off-grid and eco experience.</div>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="assets/21.jpg" alt="Warm Beverage">
+                    <div class="gallery-caption">Pure tablea, rich coffee, and mountain views, morning perfection.</div>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="assets/24.jpg" alt="Dragon Fruit">
+                    <div class="gallery-caption">Fresh off the vine and bursting with flavor.</div>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="assets/20.jpg" alt="Crispy Calamares">
+                    <div class="gallery-caption">Golden, crispy calamares served fresh on a leaf. Golden hour snack!</div>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="assets/14.jpg" alt="View from Kubo">
+                    <div class="gallery-caption">Framed by nature: serene mountain views straight from the gazebo.</div>
+                </div>
+                
+                <div class="gallery-card">
+                    <img src="assets/10.jpg" alt="Horseback Riding">
+                    <div class="gallery-caption">Sunny days, open trails, and good company.</div>
+                </div>
+                                
+                <div class="gallery-card">
+                    <img src="assets/9.jpg" alt="Clear Waters">
+                    <div class="gallery-caption">Cool waters framed by wild greenery—the ultimate nature escape.</div>
+                </div>
+                                                
+                <div class="gallery-card">
+                    <img src="assets/27.jpg" alt="Poolside Villa View">
+                    <div class="gallery-caption">Clear blue waters meets lush countryside vibes.</div>
+                </div>
+                                                                
+                <div class="gallery-card">
+                    <img src="assets/29.jpg" alt="Gazebo and Outdoor Seating">
+                    <div class="gallery-caption">A cozy wooden spot tucked away under the canopy.</div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2026 Binanua-an Eco Camp, Igbaras, Iloilo. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script>
+    const menuButton = document.getElementById("menuButton");
+    const sidebar = document.getElementById("sidebar");
+
+    menuButton.addEventListener("click", () => {
+        sidebar.classList.toggle("open");
+    });
+
+    document.addEventListener("click", (event) => {
+        if (
+            sidebar.classList.contains("open") &&
+            !sidebar.contains(event.target) &&
+            !menuButton.contains(event.target)
+        ) {
+            sidebar.classList.remove("open");
+        }
+    });
+    </script>
+    
+</body>
+</html>

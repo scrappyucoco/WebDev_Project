@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Us</title>
+        <link rel="stylesheet" href="css/about.css">
+    </head>
+
+    <body>
+
+        <header>
+            <button class="menu-button" id="menuButton">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="welcome">
+                <div>About Us</div>
+            </div>
+
+            <a href="contact-us.html" class="header-contact"><img src="assets/phone.svg" class="nav-icon-header" alt=""> Contact Us</a>
+        </header>
+
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-title"><img src="assets/telescope.svg" class="nav-icon" alt="">EXPLORE</div>
+        
+            <a href="index.html"><img src="assets/house.svg" class="nav-icon" alt=""> Home</a>
+            <a href="about-us.html"><img src="assets/info.svg" class="nav-icon" alt=""> About Us</a>
+            <a href="gallery.html"><img src="assets/image.svg" class="nav-icon" alt=""> Gallery</a>
+            <a href="services.html"><img src="assets/concierge-bell.svg" class="nav-icon" alt=""> Our Services</a>
+        </aside>
+
+        <main>
+
+            <section class="about-hero">
+                <div>
+                    <span>OUR STORY</span>
+                    <h1>Rooted in<br>Igbaras</h1>
+                    <p>
+                        A place where nature, community, and relaxation
+                        come together in the mountains of Binanua-an.
+                    </p>
+                </div>
+            </section>
+
+            <section class="history">
+
+                <div class="section-title">
+                    <span>01</span>
+                    <h2>Our Background</h2>
+                </div>
+
+                <div class="history-content">
+
+                    <div class="history-text">
+                        <p>
+                            Binanua-an holds an important place in the history
+                            of Igbaras. Historical accounts describe the area
+                            as an early settlement and townsite, positioned
+                            near hills and natural surroundings that helped
+                            shape the development of the community.
+                        </p>
+
+                        <p>
+                            Over time, the community continued to grow as
+                            Igbaras developed into the municipality known
+                            today. Binanua-an was formally recognized as a
+                            barrio of Igbaras through Republic Act No. 2901
+                            in 1960, giving the community a clearer place
+                            within the municipality's local history.
+                        </p>
+
+                        <p>
+                            Igbaras itself is widely recognized for its
+                            mountains, rivers, caves, waterfalls, and other
+                            natural attractions. Places such as Mount Napulak,
+                            Nadsadjan Falls, Timapok Falls, and several caves
+                            have helped establish the municipality as a
+                            destination for people interested in nature and
+                            outdoor experiences.
+                        </p>
+
+                        <p>
+                            Situated within this natural setting, Binanua-an
+                            Eco Camp and the Imbalayan Binanua-an Igbaras
+                            Resort represent the kind of countryside
+                            experience that allows visitors to slow down,
+                            enjoy the surroundings, and appreciate the
+                            environment. The area provides a setting where
+                            visitors can step away from busy urban spaces
+                            and spend time closer to nature.
+                        </p>
+
+                        <p>
+                            Today, the spirit of the place is centered on
+                            hospitality, appreciation for the environment,
+                            and creating memorable experiences for visitors.
+                            More than simply being a place to stay, the resort
+                            is part of a community and landscape shaped by
+                            the natural beauty and history of Igbaras.
+                        </p>
+                    </div>
+
+                    <div class="history-image">
+                        <img src="assets/A5.jpg" alt="Mountain scenery in Igbaras">
+                        <div>
+                            <span>BINANUA-AN • IGBARAS</span>
+                            <h3>Where nature becomes     part of the experience.</h3>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="values">
+
+                <div class="section-title">
+                    <span>02</span>
+                    <h2>What We Stand For</h2>
+                </div>
+
+                <div class="values-grid">
+
+                    <div class="value-card">
+                        <span>01</span>
+                        <h3>Our Mission</h3>
+                        <p>
+                            To provide guests with a peaceful and welcoming
+                            countryside experience while encouraging respect
+                            for nature and the local community.
+                        </p>
+                    </div>
+
+                    <div class="value-card">
+                        <span>02</span>
+                        <h3>Our Vision</h3>
+                        <p>
+                            To be a memorable nature destination in Igbaras
+                            where people can relax, reconnect with the
+                            environment, and experience genuine local
+                            hospitality.
+                        </p>
+                    </div>
+
+                    <div class="value-card">
+                        <span>03</span>
+                        <h3>Our Values</h3>
+                        <p>
+                            We value hospitality, environmental awareness,
+                            community, simplicity, and respect for the
+                            natural surroundings that make Binanua-an unique.
+                        </p>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="closing">
+                <div>
+                    <span>COME CLOSER TO NATURE</span>
+                    <h2>There is more to discover.</h2>
+                    <a href="gallery.html">View our gallery</a>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+  
+            <p>
+                &copy; 2026 Binanua-an Eco Camp, Igbaras, Iloilo.
+                All rights reserved.
+            </p>
+
+            </div>
+        </footer>
+
+        <script>
+            const menuButton = document.getElementById("menuButton");
+            const sidebar = document.getElementById("sidebar");
+
+            menuButton.addEventListener("click", () => {
+                sidebar.classList.toggle("open");
+            });
+
+            document.addEventListener("click", (event) => {
+                if (
+                    sidebar.classList.contains("open") &&
+                    !sidebar.contains(event.target) &&
+                    !menuButton.contains(event.target)
+                ) {
+                    sidebar.classList.remove("open");
+                }
+            });
+        </script>
+
+    </body>
+</html>
