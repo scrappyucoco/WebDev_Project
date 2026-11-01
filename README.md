@@ -15,7 +15,7 @@ Project Structure
  /assets/ - Project image assets and media
  index.html - Primary landing page
 
-Here's the GitHub repository for more details: https://github.com/rembrandtmonteclaro647-cpu/webdev-for-business-site-project.git 
+Here's the GitHub repository for more details: https://github.com/scrappyucoco/WebDev_Project.git
 
 Authors:
 
