@@ -21,3 +21,12 @@ Authors:
 
 Lance Bervi T. Nono - BSCS-2B
 Rembrandt M. Monteclaro - BSCS-2B
+
+## Google Places API setup
+
+1. Create a browser/API-restricted Google Places API key.
+2. Enable **Places API (New)** in the Google Cloud project associated with the key.
+3. Paste the key into the `google-places-api-key` meta tag in `public/contact_us.html`.
+4. Open the static HTML through any static host or Vercel.
+
+The browser JavaScript requests Google Places API directly. This project uses no Node.js runtime, backend, package manager, library, or framework.

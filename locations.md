@@ -11,3 +11,7 @@ PH6C+W67, La Paz, Iloilo City, Iloilo
 "Smallvile Branch"
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.3838490283015!2d122.5486546758239!3d10.704847589439378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33aee50028f54c99%3A0xbf159c356e686c08!2sAlicia's%20Special%20Batchoy%20Smallville!5e0!3m2!1sen!2sph!4v1795422986614!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
 Red Square Building, San Jose St, Mandurriao, Iloilo City, 5000 Iloilo
+
+"Villa Arevalo Branch"
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2186.132888573816!2d122.51548731323265!3d10.672566005497389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33aef10025994919%3A0x4ab62f5bed236f75!2sAlicia%20Special%20Batchoy%20Villa%20Arevalo%20Branch!5e0!3m2!1sen!2sph!4v1795433974043!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+Heritage House, 1927 Avanceña-Sayson, Quezon St, Iloilo City, 5000 Iloilo

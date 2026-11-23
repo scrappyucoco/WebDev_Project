@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact & Locations - Alicia's Special Batchoy</title>
+  <title>Branches, Reviews & Contact - Alicia's Special Batchoy</title>
+  <meta name="description" content="Find Alicia's Special Batchoy branches in Iloilo City, view maps and peak dining hours, read Google reviews, and send a contact or catering inquiry.">
+  <!-- Paste a browser/API-restricted Google Places API key here. -->
+  <meta name="google-places-api-key" content="">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -20,8 +23,8 @@
         <ul class="nav_menu" id="nav_menu">
           <li><a href="index.html" class="nav_link">Home</a></li>
           <li><a href="about_us.html" class="nav_link">About Us</a></li>
-          <li><a href="our_menu.html" class="nav_link">Menu & Products</a></li>
-          <li><a href="contact_us.html" class="nav_link active">Contact & Locations</a></li>
+          <li><a href="our_menu.html" class="nav_link">Menu &amp; Products</a></li>
+          <li><a href="contact_us.html" class="nav_link active">Contact &amp; Locations</a></li>
           <li><a href="our_menu.html" class="nav_cta_btn">Order Now</a></li>
         </ul>
       </nav>
@@ -31,125 +34,212 @@
   <main class="section_padding">
     <div class="site_container">
       <div class="section_header">
-        <h1>Contact Us & Branch Network</h1>
-        <p>Get in touch with our team, place inquiries, or visit any of our 4 locations in Iloilo City.</p>
+        <span class="section_eyebrow">Find Us in Iloilo City</span>
+        <h1>Visit, Call, or Message Alicia's</h1>
+        <p>Choose a branch for its map, store hours, click-to-call number, peak dining times, and Google review board.</p>
       </div>
 
-      <div class="contact_grid">
-        <!-- Validation-->
-        <div class="card_item" style="padding:2rem;">
-          <h2>Send Us a Message</h2>
-          <p>Fill out the form below for orders, catering, or general feedback.</p>
-
-          <form id="contact_form" novalidate>
-            <div class="form_group" id="group_name">
-              <label for="user_name" class="form_label">Full Name *</label>
-              <input type="text" id="user_name" class="form_input" placeholder="e.g. Maria Santos" required>
-              <span class="error_msg">Please enter your full name.</span>
-            </div>
-
-            <div class="form_group" id="group_email">
-              <label for="user_email" class="form_label">Email Address *</label>
-              <input type="email" id="user_email" class="form_input" placeholder="e.g. maria@example.com" required>
-              <span class="error_msg">Please enter a valid email address.</span>
-            </div>
-
-            <div class="form_group" id="group_branch">
-              <label for="user_branch" class="form_label">Preferred Branch *</label>
-              <select id="user_branch" class="form_select" required>
-                <option value="">Select a branch...</option>
-                <option value="jaro">Jaro Branch (Washington St.)</option>
-                <option value="lapaz">La Paz Branch</option>
-                <option value="arevalo">Arevalo Branch</option>
-                <option value="smallville">Smallville Branch</option>
-              </select>
-              <span class="error_msg">Please select a preferred branch.</span>
-            </div>
-
-            <div class="form_group" id="group_message">
-              <label for="user_message" class="form_label">Your Message *</label>
-              <textarea id="user_message" class="form_textarea" rows="4" placeholder="How can we help you?" required></textarea>
-              <span class="error_msg">Please enter a message (min. 10 characters).</span>
-            </div>
-
-            <button type="submit" class="btn_primary" style="width:100%;">Submit Inquiry</button>
-            <div id="form_feedback" style="margin-top:1rem; font-weight:600; text-align:center;"></div>
-          </form>
-        </div>
-
-
-        <div>
-          <h2>Branch Contact Numbers</h2>
-          <div class="cards_grid_2" style="display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-bottom:2rem;">
-            <div style="background:#FFF; padding:1rem; border-radius:var(--radius_sm); border:1px solid var(--border_color);">
-              <strong>Jaro Branch</strong>
-              <p>+63 999 880 5529<br><small>Washington St. Brgy. Democracia</small></p>
-            </div>
-            <div style="background:#FFF; padding:1rem; border-radius:var(--radius_sm); border:1px solid var(--border_color);">
-              <strong>La Paz Branch</strong>
-              <p>+63 939 989 3302</p>
-            </div>
-            <div style="background:#FFF; padding:1rem; border-radius:var(--radius_sm); border:1px solid var(--border_color);">
-              <strong>Arevalo Branch</strong>
-              <p>+63 999 885 9688</p>
-            </div>
-            <div style="background:#FFF; padding:1rem; border-radius:var(--radius_sm); border:1px solid var(--border_color);">
-              <strong>Smallville Branch</strong>
-              <p>+63 947 898 4117</p>
-            </div>
+      <!-- ==================================================================
+           TOP-LEVEL BRANCH FINDER & BRANCH DETAILS
+           ================================================================== -->
+      <section class="branch_section" aria-labelledby="branch_finder_heading">
+        <div class="branch_toolbar">
+          <div>
+            <h2 id="branch_finder_heading">Locations</h2>
+            <p>Four branches, one signature batchoy. Switch branches to update the map and details below.</p>
           </div>
 
-          <h3>2025-2026 Holiday Schedule</h3>
-          <table class="schedule_table">
-            <thead>
-              <tr>
-                <th>Dates</th>
-                <th>Operating Hours</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Dec 24 - 25, 2025</td>
-                <td><strong style="color:var(--accent_pink);">CLOSED</strong></td>
-              </tr>
-              <tr>
-                <td>Dec 26 - 28, 2025</td>
-                <td>Regular Store Hours</td>
-              </tr>
-              <tr>
-                <td>Dec 29, 2025</td>
-                <td>7:00 AM – 2:00 PM Only</td>
-              </tr>
-              <tr>
-                <td>Dec 30, 2025 – Jan 1, 2026</td>
-                <td><strong style="color:var(--accent_pink);">CLOSED</strong></td>
-              </tr>
-              <tr>
-                <td>Jan 2, 2026 Onwards</td>
-                <td>Resume Normal Operations (All 4 Branches)</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="branch_select_wrap">
+            <label for="branch_selector" class="branch_select_label">Choose a branch</label>
+            <select id="branch_selector" class="branch_select">
+              <option value="jaro">Jaro Branch — Washington St., Jaro</option>
+              <option value="lapaz">La Paz Branch — La Paz</option>
+              <option value="smallville">Smallville Branch — Red Square Bldg., Mandurriao</option>
+              <option value="arevalo">Villa Arevalo Branch — Heritage House, Quezon St.</option>
+            </select>
+          </div>
         </div>
-      </div>
 
-      <div style="margin-top:4rem;">
-        <h2>Interactive Branch Map</h2>
-        <p>Find our La Paz Branch location on Google Maps below:</p>
-        <div class="map_wrapper">
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m15!1m10!1m3!1d3!2d122.5701965395392!3d10.712559790374392!2m1!1f0!3m2!1i1024!2i768!4f75!3m3!1m2!1s0x33aee5e2bbbfcb43%3A0x182856213a4bc17!2sALICIA%20BATCHOY%20LAPAZ%20BRANCH!4v1794926998661" 
-            width="100%" 
-            height="450" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="strict-origin-when-cross-origin"
-            title="Alicia's Batchoy La Paz Branch Map">
-          </iframe>
+        <div class="branch_finder_grid">
+          <!-- Left: embedded Google Map -->
+          <div class="branch_map_card">
+            <iframe
+              id="branch_map_iframe"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.0887488709322!2d122.5580657!3d10.727638100000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33aee4df8e5ce4a3%3A0x863412de0a79cc05!2sAlicia's%20Restaurant%20%26%20Catering!5e0!3m2!1sen!2sph!4v1795422888259!5m2!1sen!2sph"
+              width="100%"
+              height="450"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+              title="Map of Alicia's Special Batchoy Jaro Branch">
+            </iframe>
+          </div>
+
+          <!-- Right: branch details card -->
+          <aside class="branch_details_card" aria-labelledby="branch_name">
+            <span class="branch_details_eyebrow">Branch Details</span>
+            <h2 id="branch_name">Jaro Branch</h2>
+
+            <div class="branch_info_list">
+              <div class="branch_info_row">
+                <img src="icons/map_pin.svg" alt="" class="branch_info_icon" aria-hidden="true">
+                <div>
+                  <span class="branch_info_label">Address</span>
+                  <p class="branch_info_value" id="branch_address">PHH5+364, Washington St, Jaro, Iloilo City, Iloilo</p>
+                </div>
+              </div>
+
+              <div class="branch_info_row">
+                <img src="icons/phone.svg" alt="" class="branch_info_icon" aria-hidden="true">
+                <div>
+                  <span class="branch_info_label">Call Us</span>
+                  <a class="branch_info_value branch_phone_link" id="branch_phone_link" href="tel:+639998805529">+63 999 880 5529</a>
+                </div>
+              </div>
+
+              <div class="branch_info_row">
+                <img src="icons/clock.svg" alt="" class="branch_info_icon" aria-hidden="true">
+                <div>
+                  <span class="branch_info_label">Store Hours</span>
+                  <p class="branch_info_value" id="branch_hours">7:00 AM – 8:30 PM</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="peak_hours_block">
+              <div class="peak_hours_top">
+                <span class="peak_hours_label">Popular Times</span>
+                <span class="peak_hours_text" id="peak_hours_text">Peak Dining: 11:30 AM – 1:30 PM &amp; 6:00 PM – 8:00 PM</span>
+              </div>
+              <div class="peak_hours_track" id="peak_hours_track" role="img" aria-label="Peak dining hours for Jaro Branch"></div>
+              <div class="peak_hours_scale" aria-hidden="true">
+                <span>7 AM</span>
+                <span>3 PM</span>
+                <span>11 PM</span>
+              </div>
+            </div>
+
+            <div class="rating_badge" id="rating_badge">
+              <div class="rating_badge_header">
+                <span class="google_mark" aria-hidden="true">G</span>
+                <span>Google Rating</span>
+              </div>
+              <div class="rating_badge_main">
+                <strong class="rating_value" id="branch_rating_value">4.5</strong>
+                <span id="branch_rating_stars">
+                  <span class="star_rating" role="img" aria-label="4.5 out of 5 stars">
+                    <span class="star_rating_base" aria-hidden="true">★★★★★</span>
+                    <span class="star_rating_fill" aria-hidden="true" style="width:90%">★★★★★</span>
+                  </span>
+                </span>
+                <span class="rating_count" id="branch_rating_count">(469 Google Reviews)</span>
+              </div>
+            </div>
+
+            <a
+              id="write_review_btn"
+              class="btn_review"
+              href="https://search.google.com/local/writereview?placeid=ChIJo-Rcjt_krjMRBcx5Ct4SNIY"
+              target="_blank"
+              rel="noopener noreferrer">
+              <svg class="btn_review_icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/>
+              </svg>
+              Write a Review on Google Maps
+            </a>
+          </aside>
         </div>
-      </div>
+      </section>
 
+      <!-- ==================================================================
+           MIDDLE SECTION: GOOGLE REVIEW BOARD
+           ================================================================== -->
+      <section class="review_board_section" aria-labelledby="review_board_heading">
+        <div class="review_board_header">
+          <div>
+            <span class="section_eyebrow">Reviews</span>
+            <h2 id="review_board_heading">What Diners Are Saying</h2>
+            <p id="review_board_subtitle">Comments from our customers</p>
+          </div>
+        </div>
+
+        <div class="reviews_grid" id="reviews_grid"></div>
+        <noscript>
+          <p class="reviews_empty">Enable JavaScript to load the review board.</p>
+        </noscript>
+      </section>
+
+      <!-- ==================================================================
+           BOTTOM SECTION: CONTACT & CATERING INQUIRY FORM
+           ================================================================== -->
+      <section class="contact_section" aria-labelledby="contact_form_heading">
+        <div class="contact_form_card">
+          <div class="contact_form_aside">
+            <span class="section_eyebrow">Contact &amp; Catering</span>
+            <h2 id="contact_form_heading">Let's Plan Your Next Gathering</h2>
+            <p>Send us a message for catering, bulk orders, or general feedback. Our team will get back to you within one business day.</p>
+            <ul class="contact_points">
+              <li>Catering trays and party packages</li>
+              <li>Bulk orders and takeout</li>
+              <li>Feedback and branch concerns</li>
+            </ul>
+          </div>
+
+          <div class="contact_form_body">
+            <form id="contact_form" novalidate>
+              <div class="form_grid_2">
+                <div class="form_group" id="group_name">
+                  <label for="user_name" class="form_label">Full Name *</label>
+                  <input type="text" id="user_name" class="form_input" placeholder="e.g. Maria Santos" autocomplete="name" minlength="2" required aria-describedby="error_name">
+                  <span class="error_msg" id="error_name">Please enter your full name.</span>
+                </div>
+
+                <div class="form_group" id="group_email">
+                  <label for="user_email" class="form_label">Email Address *</label>
+                  <input type="email" id="user_email" class="form_input" placeholder="e.g. maria@example.com" autocomplete="email" required aria-describedby="error_email">
+                  <span class="error_msg" id="error_email">Please enter a valid email address.</span>
+                </div>
+              </div>
+
+              <div class="form_grid_2">
+                <div class="form_group" id="group_branch">
+                  <label for="user_branch" class="form_label">Preferred Branch *</label>
+                  <select id="user_branch" class="form_select" required aria-describedby="error_branch">
+                    <option value="">Select a branch...</option>
+                    <option value="jaro">Jaro Branch — Washington St.</option>
+                    <option value="lapaz">La Paz Branch — La Paz</option>
+                    <option value="smallville">Smallville Branch — Red Square Bldg.</option>
+                    <option value="arevalo">Villa Arevalo Branch — Heritage House</option>
+                  </select>
+                  <span class="error_msg" id="error_branch">Please select a preferred branch.</span>
+                </div>
+
+                <div class="form_group" id="group_inquiry">
+                  <label for="user_inquiry" class="form_label">Inquiry Type *</label>
+                  <select id="user_inquiry" class="form_select" required aria-describedby="error_inquiry">
+                    <option value="">Select inquiry type...</option>
+                    <option value="general">General Inquiry</option>
+                    <option value="catering">Catering / Events</option>
+                    <option value="bulk">Bulk Order</option>
+                    <option value="feedback">Feedback</option>
+                  </select>
+                  <span class="error_msg" id="error_inquiry">Please select an inquiry type.</span>
+                </div>
+              </div>
+
+              <div class="form_group" id="group_message">
+                <label for="user_message" class="form_label">Your Message *</label>
+                <textarea id="user_message" class="form_textarea" rows="5" placeholder="Tell us about your event, order, or concern..." minlength="10" required aria-describedby="error_message"></textarea>
+                <span class="error_msg" id="error_message">Please enter a message (min. 10 characters).</span>
+              </div>
+
+              <p class="form_required_note">* Required fields</p>
+              <button type="submit" class="btn_primary form_submit_btn">Submit Inquiry</button>
+              <div id="form_feedback" class="form_feedback" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </section>
     </div>
   </main>
 
