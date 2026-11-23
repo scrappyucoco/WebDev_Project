@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Menu & Products - Alicia's Special Batchoy</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="main_header">
+    <div class="site_container nav_wrapper">
+      <a href="index.html" class="brand_logo">
+        <div class="brand_title">Alicia's <span>Batchoy</span></div>
+      </a>
+      <button class="mobile_toggle_btn" id="mobile_toggle_btn" aria-label="Toggle Menu">
+        <img src="icons/menu.svg" alt="Menu Icon" id="toggle_icon"> <!-- Lucide Icon: menu -->
+      </button>
+      <nav>
+        <ul class="nav_menu" id="nav_menu">
+          <li><a href="index.html" class="nav_link">Home</a></li>
+          <li><a href="about_us.html" class="nav_link">About Us</a></li>
+          <li><a href="our_menu.html" class="nav_link active">Menu & Products</a></li>
+          <li><a href="contact_us.html" class="nav_link">Contact & Locations</a></li>
+          <li><a href="our_menu.html" class="nav_cta_btn">Order Now</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section_padding">
+    <div class="site_container">
+      <div class="section_header">
+        <h1>Complete Menu & Specialties</h1>
+        <p>Explore our signature Batchoy bowls, daily specials, homestyle everyday dishes, delicacies, and drinks.</p>
+      </div>
+
+      <!-- Real-Time Search Bar -->
+      <div class="search_container">
+        <div class="search_input_wrapper">
+          <img src="icons/search.svg" alt="Search Icon" class="search_icon"> <!-- Lucide Icon: search -->
+          <input type="text" id="menu_search_input" class="search_input" placeholder="Search menu items (e.g., Batchoy, Sisig, Laswa, Pastillas...)" aria-label="Search Menu Items">
+          <button type="button" id="search_clear_btn" class="search_clear_btn" aria-label="Clear Search">&times;</button>
+        </div>
+      </div>
+
+      <!-- Category Filter Bar (Ordered by Importance) -->
+      <div class="filter_bar">
+        <button class="filter_btn active" data-filter="all">All Items</button>
+        <button class="filter_btn" data-filter="batchoy">Special Batchoy</button>
+        <button class="filter_btn" data-filter="daily_specials">Daily Specials</button>
+        <button class="filter_btn" data-filter="everyday_menu">Everyday Menu</button>
+        <button class="filter_btn" data-filter="delicacies">Packaged Delicacies</button>
+        <button class="filter_btn" data-filter="beverages">Beverages</button>
+      </div>
+
+      <!-- Empty State Notice -->
+      <div id="no_results_msg" class="no_results_msg">No matching menu items found</div>
+
+      <!-- Menu Items Grid -->
+      <div class="cards_grid_4" id="menu_grid">
+
+        <!-- 1. SPECIAL BATCHOY (5) -->
+        <article class="card_item" data-category="batchoy" data-title="extra batchoy">
+          <div class="card_icon_placeholder category-batchoy" aria-hidden="true">
+            <img src="icons/soup.svg" alt="" class="card_category_icon">
+          </div>
+          <div class="card_body">
+            <div class="card_header_row">
+              <h3 class="card_item_title">Extra</h3>
+              <span class="card_price">₱150.00</span>
+            </div>
+            <div class="card_badges">
+              <span class="category_badge">Special Batchoy</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card_item" data-category="batchoy" data-title="super batchoy">
+          <img src="assets/batchoy_special.jpg" alt="Super Batchoy" class="card_img_top">
+          <div class="card_body">
+            <div class="card_header_row">
+              <h3 class="card_item_title">Super</h3>
+              <span class="card_price">₱140.00</span>
+            </div>
+            <div class="card_badges">
+              <span class="category_badge">Special Batchoy</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card_item" data-category="batchoy" data-title="chicken batchoy">
+          <div class="card_icon_placeholder category-batchoy" aria-hidden="true">
+            <img src="icons/soup.svg" alt="" class="card_category_icon">
+          </div>
+          <div class="card_body">
+            <div class="card_header_row">
+              <h3 class="card_item_title">Chicken Batchoy</h3>
+              <span class="card_price">₱180.00</span>
+            </div>
+            <div class="card_badges">
+              <span class="category_badge">Special Batchoy</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card_item" data-category="batchoy" data-title="beef batchoy">
+          <div class="card_icon_placeholder category-batchoy" aria-hidden="true">
+            <img src="icons/soup.svg" alt="" class="card_category_icon">
+          </div>
+          <div class="card_body">
+            <div class="card_header_row">
+              <h3 class="card_item_title">Beef Batchoy</h3>
+              <span class="card_price">₱180.00</span>
+            </div>
+            <div class="card_badges">
+              <span class="category_badge">Special Batchoy</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card_item" data-category="batchoy" data-title="chicken &amp; beef batchoy">
+          <div class="card_icon_placeholder category-batchoy" aria-hidden="true">
+            <img src="icons/soup.svg" alt="" class="card_category_icon">
+          </div>
+          <div class="card_body">
+            <div class="card_header_row">
+              <h3 class="card_item_title">Chicken &amp; Beef Batchoy</h3>
+              <span class="card_price">₱180.00</span>
+            </div>
+            <div class="card_badges">
+              <span class="category_badge">Special Batchoy</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. DAILY SPECIALS (21) -->
+        <article class="card_item" data-category="daily_specials" data-title="monggo may gata monday">
+          <div class="card_icon_placeholder category-daily_specials" aria-hidden="true">
+            <img src="icons/flame.svg" alt="" class="card_category_icon">
+          </div>
+          <div class="card_body">
+            <div class="card_header_row">
+              <h3 class="card_item_title">Monggo may Gata</h3>
+              <span class="card_price">₱70.00</span>
+            </div>
+            <div class="card_badges">
+              <span class="category_badge">Daily Specials</span>
+              <span class="day_badge">Mon</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card_item" data-category="daily_specials" data-title="laswa monday friday">
+          <div class="card_icon_placeholder category-daily_specials" aria-hidden="true">
+            <img src="icons/flame.svg" alt="" class="card_category_icon">
+          </div>
+          <div class="card_body">
+            <div class="card_header_row">
+              <h3 class="card_item_title">Laswa</h3>
+              <span class="card_price">₱70.00</span>
+            </div>
+            <div class="card_badges">
+              <span class="category_badge">Daily Specials</span>
+              <span class="day_badge">Mon &amp; Fri</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card_item" data-category="daily_specials" data-title="kilaw labanos kinilaw labanos monday friday">
+          <div class="card_icon_placeholder category-daily_specials" aria-hidden="true">
+            <img src="icons/flame.svg" alt="" class="card_category_icon">
+          </div>
+          <div class="card_body">
+            <div class="card_header_row">
+              <h3 class="card_item_title">Kilaw Labanos</h3>
+              <span class="card_price">₱50.00</span>
+            </div>
+            <div class="card_badges">
+              <span class="category_badge">Daily Specials</span>
+              <span class="day_badge">Mon &amp; Fri</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card_item" data-category="daily_specials" data-title="fried fish isda fried monday thursday">
+          <div class="card_icon_placeholder category-daily_specials" aria-hidden="true">
+            <img src="icons/flame.svg" alt="" class="card_category_icon">
+          </div>
+          <div class="card_body">
+            <div class="card_header_row">
+              <h3 class="card_item_title">Fried Fish</h3>
+              <span class="card_price">₱100.00</span>
+            </div>
+            <div class="card_badges">
+              <span class="category_badge">Daily Specials</span>
+              <span class="day_badge">Mon &amp; Thu</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card_item" data-category="daily_specials" data-title="tambo may gata tuesday">
+          <div class="card_icon_placeholder category-daily_specials" aria-hidden="true">
+            <img src="icons/flame.svg" alt="" class="card_category_icon">
+          </div>
+          <div class="card_body">
+            <div class="card_header_row">
+              <h3 class="card_item_title">Tambo may Gata</h3>
+              <span class="card_price">₱70.00</span>
+            </div>
+            <div class="card_badges">
+              <span class="category_badge">Daily Specials</span>
+              <span class="day_badge">Tue</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card_item" data-category="daily_specials" data-title="pinakbet tuesday">
+          <div class="card_icon_placeholder category-daily_specials" aria-hidden="true">
+            <img src="icons/flame.svg" alt="" class="card_category_icon">
+          </div>
+          <div class="card_body">
+            <div class="card_header_row">
+              <h3 class="card_item_title">Pinakbet</h3>
+              <span class="card_price">₱70.00</span>
+            </div>
+            <div class="card_badges">
+              <span class="category_badge">Daily Specials</span>
+              <span class="day_badge">Tue</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card_item" data-category="daily_specials" data-title="grilled fish isda sugba sugba isda tuesday wednesday">
+          <div class="card_icon_placeholder category-daily_specials" aria-hidden="true">
+            <img src="icons/flame.svg" alt="" class="card_category_icon">
+          </div>
+          <div class="card_body">
+            <div class="card_header_row">
+              <h3 class="card_item_title">Grilled Fish</h3>
+              <span class="card_price">₱100.00</span>
+            </div>
+            <div class="card_badges">
+              <span class="category_badge">Daily Specials</span>
+              <span class="day_badge">Tue &amp; Wed</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card_item" data-category="daily_specials" data-title="taugi kalabasa wednesday">
+          <div class="card_icon_placeholder category-daily_specials" aria-hidden="true">
+            <img src="icons/flame.svg" alt="" class="card_category_icon">
+          </div>
+          <div class="card_body">
+            <div class="card_header_row">
+              <h3 class="card_item_title">Taugi Kalabasa</h3>
+              <span class="card_price">₱70.00</span>
+            </div>
+            <div class="card_badges">
+              <span class="category_badge">Daily Specials</span>
+              <span class="day_badge">Wed</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card_item" data-category="daily_specials" data-title="pork chop wednesday saturday">
+          <div class="card_icon_placeholder category-daily_specials" aria-hidden="true">
+            <img src="icons/flame.svg" alt="" class="card_category_icon">
+          </div>
+          <div class="card_body">
+            <div class="card_header_row">
+              <h3 class="card_item_title">Pork Chop</h3>
+              <span class="card_price">₱100.00</span>
+            </div>
+            <div class="card_badges">
+              <span class="category_badge">Daily Specials</span>
+              <span class="day_badge">Wed &amp; Sat</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card_item" data-category="daily_specials" data-title="gabi may gata wednesday">
+          <div class="card_icon_placeholder category-daily_specials" aria-hidden="true">
+            <img src="icons/flame.svg" alt="" class="card_category_icon">
+          </div>
+          <div class="card_body">
+            <div class="card_header_row">
+              <h3 class="card_item_title">Gabi may Gata</h3>
+              <span class="card_price">₱70.00</span>
+            </div>
+            <div class="card_badges">
+              <span class="category_badge">Daily Specials</span>
+              <span class="day_badge">Wed</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card_item" data-category="daily_specials" data-title="lutik kalabasa pasayan thursday">
+          <div class="card_icon_placeholder category-daily_specials" aria-hidden="true">
+            <img src="icons/flame.svg" alt="" class="card_category_icon">
+          </div>
+          <div class="card_body">
+            <div class="card_header_row">
+              <h3 class="card_item_title">Lutik Kalabasa Pasayan</h3>
+              <span class="card_price">₱70.00</span>
+            </div>
+            <div class="card_badges">
+              <span class="category_badge">Daily Specials</span>
+              <span class="day_badge">Thu</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card_item" data-category="daily_specials" data-title="monggo alugbati thursday">
+          <div class="card_icon_placeholder category-daily_specials" aria-hidden="true">
+            <img src="icons/flame.svg" alt="" class="card_category_icon">
+          </div>
+          <div class="card_body">
+            <div class="card_header_row">
+              <h3 class="card_item_title">Monggo Alugbati</h3>
+              <span class="card_price">₱70.00</span>
+            </div>
+            <div class="card_badges">
+              <span class="category_badge">Daily Specials</span>
+              <span class="day_badge">Thu</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card_item" data-category="daily_specials" data-title="fried chicken thursday sunday">
+          <div class="card_icon_placeholder category-daily_specials" aria-hidden="true">
+            <img src="icons/flame.svg" alt="" class="card_category_icon">
+          </div>
+          <div class="card_body">
+            <div class="card_header_row">
+              <h3 class="card_item_title">Fried Chicken</h3>
+              <span class="card_price">₱70.00</span>
+            </div>
+            <div class="card_badges">
+              <span class="category_badge">Daily Specials</span>
+              <span class="day_badge">Thu &amp; Sun</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card_item" data-category="daily_specials" data-title="kbl kadyos baboy langka friday">
+          <div class="card_icon_placeholder category-daily_specials" aria-hidden="true">
+            <img src="icons/flame.svg" alt="" class="card_category_icon">
+          </div>
+          <div class="card_body">
+            <div class="card_header_row">
+              <h3 class="card_item_title">KBL (Kadyos, Baboy, Langka)</h3>
+              <span class="card_price">₱150.00</span>
+            </div>
+            <div class="card_badges">
+              <span class="category_badge">Daily Specials</span>
+              <span class="day_badge">Fri</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card_item" data-category="daily_specials" data-title="fried bangus friday">
+          <div class="card_icon_placeholder category-daily_specials" aria-hidden="true">
+            <img src="icons/flame.svg" alt="" class="card_category_icon">
+          </div>
+          <div class="card_body">
+            <div class="card_header_row">
+              <h3 class="card_item_title">Fried Bangus</h3>
+              <span class="card_price">₱150.00</span>
+            </div>
+            <div class="card_badges">
+              <span class="category_badge">Daily Specials</span>
+              <span class="day_badge">Fri</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card_item" data-category="daily_specials" data-title="torta talong saturday">
+          <div class="card_icon_placeholder category-daily_specials" aria-hidden="true">
+            <img src="icons/flame.svg" alt="" class="card_category_icon">
+          </div>
+          <div class="card_body">
+            <div class="card_header_row">
+              <h3 class="card_item_title">Torta Talong</h3>
+              <span class="card_price">₱70.00</span>
+            </div>
+            <div class="card_badges">
+              <span class="category_badge">Daily Specials</span>
+              <span class="day_badge">Sat</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card_item" data-category="daily_specials" data-title="sinigang bangus saturday">
+          <div class="card_icon_placeholder category-daily_specials" aria-hidden="true">
+            <img src="icons/flame.svg" alt="" class="card_category_icon">
+          </div>
+          <div class="card_body">
+            <div class="card_header_row">
+              <h3 class="card_item_title">Sinigang Bangus</h3>
+              <span class="card_price">₱90.00</span>
+            </div>
+            <div class="card_badges">
+              <span class="category_badge">Daily Specials</span>
+              <span class="day_badge">Sat</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card_item" data-category="daily_specials" data-title="potchero sunday">
+          <div class="card_icon_placeholder category-daily_specials" aria-hidden="true">
+            <img src="icons/flame.svg" alt="" class="card_category_icon">
+          </div>
+          <div class="card_body">
+            <div class="card_header_row">
+              <h3 class="card_item_title">Potchero</h3>
+              <span class="card_price">₱150.00</span>
+            </div>
+            <div class="card_badges">
+              <span class="category_badge">Daily Specials</span>
+              <span class="day_badge">Sun</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card_item" data-category="daily_specials" data-title="alimusan fresh catch sunday">
+          <div class="card_icon_placeholder category-daily_specials" aria-hidden="true">
+            <img src="icons/flame.svg" alt="" class="card_category_icon">
+          </div>
+          <div class="card_body">
+            <div class="card_header_row">
+              <h3 class="card_item_title">Alimusan (Fresh Catch)</h3>
+              <span class="card_price">Market Price</span>
+            </div>
+            <div class="card_badges">
+              <span class="category_badge">Daily Specials</span>
+              <span class="day_badge">Sun</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card_item" data-category="daily_specials" data-title="kasag fresh crab sunday">
+          <div class="card_icon_placeholder category-daily_specials" aria-hidden="true">
+            <img src="icons/flame.svg" alt="" class="card_category_icon">
+          </div>
+          <div class="card_body">
+            <div class="card_header_row">
+              <h3 class="card_item_title">Kasag (Fresh Crab)</h3>
+              <span class="card_price">Market Price</span>
+            </div>
+            <div class="card_badges">
+              <span class="category_badge">Daily Specials</span>
+              <span class="day_badge">Sun</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card_item" data-category="daily_specials" data-title="bukaw sunday">
+          <div class="card_icon_placeholder category-daily_specials" aria-hidden="true">
+            <img src="icons/flame.svg" alt="" class="card_category_icon">
+          </div>
+          <div class="card_body">
+            <div class="card_header_row">
+              <h3 class="card_item_title">Bukaw</h3>
+              <span class="card_price">₱100.00</span>
+            </div>
+            <div class="card_badges">
+              <span class="category_badge">Daily Specials</span>
+              <span class="day_badge">Sun</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. EVERYDAY MENU (14) -->
+        <article class="card_item" data-category="everyday_menu" data-title="kinilaw maskara pork">
+          <div class="card_icon_placeholder category-everyday_menu" aria-hidden="true">
+            <img src="icons/flame.svg" alt="" class="card_category_icon">
+          </div>
+          <div class="card_body">
+            <div class="card_header_row">
+              <h3 class="card_item_title">Kinilaw Maskara (Pork)</h3>
+              <span class="card_price">₱270.00</span>
+            </div>
+            <div class="card_badges">
+              <span class="category_badge">Everyday Menu</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card_item" data-category="everyday_menu" data-title="pecho inasal chicken">
+          <div class="card_icon_placeholder category-everyday_menu" aria-hidden="true">
+            <img src="icons/flame.svg" alt="" class="card_category_icon">
+          </div>
+          <div class="card_body">
+            <div class="card_header_row">
+              <h3 class="card_item_title">Pecho Inasal</h3>
+              <span class="card_price">₱120.00</span>
+            </div>
+            <div class="card_badges">
+              <span class="category_badge">Everyday Menu</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card_item" data-category="everyday_menu" data-title="paa inasal chicken">
+          <div class="card_icon_placeholder category-everyday_menu" aria-hidden="true">
+            <img src="icons/flame.svg" alt="" class="card_category_icon">
+          </div>
+          <div class="card_body">
+            <div class="card_header_row">
+              <h3 class="card_item_title">Paa Inasal</h3>
+              <span class="card_price">₱110.00</span>
+            </div>
+            <div class="card_badges">
+              <span class="category_badge">Everyday Menu</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card_item" data-category="everyday_menu" data-title="lechon kawali crispy pork">
+          <div class="card_icon_placeholder category-everyday_menu" aria-hidden="true">
+            <img src="icons/flame.svg" alt="" class="card_category_icon">
+          </div>
+          <div class="card_body">
+            <div class="card_header_row">
+              <h3 class="card_item_title">Lechon Kawali</h3>
+              <span class="card_price">₱820.00</span>
+            </div>
+            <div class="card_badges">
+              <span class="category_badge">Everyday Menu</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card_item" data-category="everyday_menu" data-title="pork sisig sizzling">
+          <div class="card_icon_placeholder category-everyday_menu" aria-hidden="true">
+            <img src="icons/flame.svg" alt="" class="card_category_icon">
+          </div>
+          <div class="card_body">
+            <div class="card_header_row">
+              <h3 class="card_item_title">Pork Sisig</h3>
+              <span class="card_price">₱250.00</span>
+            </div>
+            <div class="card_badges">
+              <span class="category_badge">Everyday Menu</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card_item" data-category="everyday_menu" data-title="native lechon letchon roasted pork">
+          <div class="card_icon_placeholder category-everyday_menu" aria-hidden="true">
+            <img src="icons/flame.svg" alt="" class="card_category_icon">
+          </div>
+          <div class="card_body">
+            <div class="card_header_row">
+              <h3 class="card_item_title">Native Letchon</h3>
+              <span class="card_price">₱430.00</span>
+            </div>
+            <div class="card_badges">
+              <span class="category_badge">Everyday Menu</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card_item" data-category="everyday_menu" data-title="pantat inasal grilled catfish">
+          <div class="card_icon_placeholder category-everyday_menu" aria-hidden="true">
+            <img src="icons/flame.svg" alt="" class="card_category_icon">
+          </div>
+          <div class="card_body">
+            <div class="card_header_row">
+              <h3 class="card_item_title">Pantat Inasal</h3>
+              <span class="card_price">Market Price</span>
+            </div>
+            <div class="card_badges">
+              <span class="category_badge">Everyday Menu</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card_item" data-category="everyday_menu" data-title="crispy pata pork knuckle">
+          <div class="card_icon_placeholder category-everyday_menu" aria-hidden="true">
+            <img src="icons/flame.svg" alt="" class="card_category_icon">
+          </div>
+          <div class="card_body">
+            <div class="card_header_row">
+              <h3 class="card_item_title">Crispy Pata</h3>
+              <span class="card_price">₱820.00</span>
+            </div>
+            <div class="card_badges">
+              <span class="category_badge">Everyday Menu</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card_item" data-category="everyday_menu" data-title="liempo inasinan salted pork belly">
+          <div class="card_icon_placeholder category-everyday_menu" aria-hidden="true">
+            <img src="icons/flame.svg" alt="" class="card_category_icon">
+          </div>
+          <div class="card_body">
+            <div class="card_header_row">
+              <h3 class="card_item_title">Liempo Inasinan</h3>
+              <span class="card_price">₱190.00</span>
+            </div>
+            <div class="card_badges">
+              <span class="category_badge">Everyday Menu</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card_item" data-category="everyday_menu" data-title="native chicken adobo">
+          <div class="card_icon_placeholder category-everyday_menu" aria-hidden="true">
+            <img src="icons/flame.svg" alt="" class="card_category_icon">
+          </div>
+          <div class="card_body">
+            <div class="card_header_row">
+              <h3 class="card_item_title">Native Chicken Adobo</h3>
+              <span class="card_price">₱450.00</span>
+            </div>
+            <div class="card_badges">
+              <span class="category_badge">Everyday Menu</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card_item" data-category="everyday_menu" data-title="grilled blue marlin fish">
+          <div class="card_icon_placeholder category-everyday_menu" aria-hidden="true">
+            <img src="icons/flame.svg" alt="" class="card_category_icon">
+          </div>
+          <div class="card_body">
+            <div class="card_header_row">
+              <h3 class="card_item_title">Grilled Blue Marlin</h3>
+              <span class="card_price">₱500.00</span>
+            </div>
+            <div class="card_badges">
+              <span class="category_badge">Everyday Menu</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card_item" data-category="everyday_menu" data-title="dinuguan pork blood stew">
+          <div class="card_icon_placeholder category-everyday_menu" aria-hidden="true">
+            <img src="icons/flame.svg" alt="" class="card_category_icon">
+          </div>
+          <div class="card_body">
+            <div class="card_header_row">
+              <h3 class="card_item_title">Dinuguan</h3>
+              <span class="card_price">₱200.00</span>
+            </div>
+            <div class="card_badges">
+              <span class="category_badge">Everyday Menu</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card_item" data-category="everyday_menu" data-title="grilled boneless bangus milkfish">
+          <div class="card_icon_placeholder category-everyday_menu" aria-hidden="true">
+            <img src="icons/flame.svg" alt="" class="card_category_icon">
+          </div>
+          <div class="card_body">
+            <div class="card_header_row">
+              <h3 class="card_item_title">Grilled Boneless Bangus</h3>
+              <span class="card_price">₱320.00</span>
+            </div>
+            <div class="card_badges">
+              <span class="category_badge">Everyday Menu</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card_item" data-category="everyday_menu" data-title="linaga all meat halo soup">
+          <div class="card_icon_placeholder category-everyday_menu" aria-hidden="true">
+            <img src="icons/flame.svg" alt="" class="card_category_icon">
+          </div>
+          <div class="card_body">
+            <div class="card_header_row">
+              <h3 class="card_item_title">Linaga (All meat/Halo)</h3>
+              <span class="card_price">₱140.00</span>
+            </div>
+            <div class="card_badges">
+              <span class="category_badge">Everyday Menu</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4. PACKAGED DELICACIES (5) -->
+        <article class="card_item" data-category="delicacies" data-title="special pastillas jar">
+          <img src="assets/pastillas_jar.jpg" alt="Special Pastillas" class="card_img_top">
+          <div class="card_body">
+            <div class="card_header_row">
+              <h3 class="card_item_title">Special Pastillas</h3>
+              <span class="card_price">₱150.00</span>
+            </div>
+            <div class="card_badges">
+              <span class="category_badge">Packaged Delicacies</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card_item" data-category="delicacies" data-title="special pastimallows pouch">
+          <img src="assets/pastimallows_pack.jpg" alt="Special Pastimallows" class="card_img_top">
+          <div class="card_body">
+            <div class="card_header_row">
+              <h3 class="card_item_title">Special Pastimallows</h3>
+              <span class="card_price">₱150.00</span>
+            </div>
+            <div class="card_badges">
+              <span class="category_badge">Packaged Delicacies</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card_item" data-category="delicacies" data-title="special chilli sauce jar condiment">
+          <img src="assets/chilli_sauce_jar.jpg" alt="Special Chilli Sauce" class="card_img_top">
+          <div class="card_body">
+            <div class="card_header_row">
+              <h3 class="card_item_title">Special Chilli Sauce</h3>
+              <span class="card_price">₱150.00</span>
+            </div>
+            <div class="card_badges">
+              <span class="category_badge">Packaged Delicacies</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card_item" data-category="delicacies" data-title="special cashews roasted nuts">
+          <img src="assets/cashew_pack.jpg" alt="Special Cashews" class="card_img_top">
+          <div class="card_body">
+            <div class="card_header_row">
+              <h3 class="card_item_title">Special Cashews</h3>
+              <span class="card_price">₱150.00</span>
+            </div>
+            <div class="card_badges">
+              <span class="category_badge">Packaged Delicacies</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card_item" data-category="delicacies" data-title="toasted pastillas brown pouch">
+          <img src="assets/toasted_pastillas_pack.jpg" alt="Toasted Pastillas" class="card_img_top">
+          <div class="card_body">
+            <div class="card_header_row">
+              <h3 class="card_item_title">Toasted Pastillas</h3>
+              <span class="card_price">₱180.00</span>
+            </div>
+            <div class="card_badges">
+              <span class="category_badge">Packaged Delicacies</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5. BEVERAGES (4) -->
+        <article class="card_item" data-category="beverages" data-title="pepsi soda softdrink">
+          <div class="card_icon_placeholder category-beverages" aria-hidden="true">
+            <img src="icons/coffee.svg" alt="" class="card_category_icon">
+          </div>
+          <div class="card_body">
+            <div class="card_header_row">
+              <h3 class="card_item_title">Pepsi (12oz)</h3>
+              <span class="card_price">₱35.00</span>
+            </div>
+            <div class="card_badges">
+              <span class="category_badge">Beverages</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card_item" data-category="beverages" data-title="mountain dew softdrink soda">
+          <div class="card_icon_placeholder category-beverages" aria-hidden="true">
+            <img src="icons/coffee.svg" alt="" class="card_category_icon">
+          </div>
+          <div class="card_body">
+            <div class="card_header_row">
+              <h3 class="card_item_title">Mountain Dew</h3>
+              <span class="card_price">₱35.00</span>
+            </div>
+            <div class="card_badges">
+              <span class="category_badge">Beverages</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card_item" data-category="beverages" data-title="gulaman cold drink tuesday sunday">
+          <div class="card_icon_placeholder category-beverages" aria-hidden="true">
+            <img src="icons/coffee.svg" alt="" class="card_category_icon">
+          </div>
+          <div class="card_body">
+            <div class="card_header_row">
+              <h3 class="card_item_title">Gulaman</h3>
+              <span class="card_price">₱50.00</span>
+            </div>
+            <div class="card_badges">
+              <span class="category_badge">Beverages</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card_item" data-category="beverages" data-title="bottled purified water">
+          <div class="card_icon_placeholder category-beverages" aria-hidden="true">
+            <img src="icons/coffee.svg" alt="" class="card_category_icon">
+          </div>
+          <div class="card_body">
+            <div class="card_header_row">
+              <h3 class="card_item_title">Bottled Water</h3>
+              <span class="card_price">₱30.00</span>
+            </div>
+            <div class="card_badges">
+              <span class="category_badge">Beverages</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="site_footer">
+    <div class="site_container footer_bottom">
+      <p>&copy; 2026 Alicia's Special Batchoy. Developed for CCS 222 Web Design and Development | West Visayas State University.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

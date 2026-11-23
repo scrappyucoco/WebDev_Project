@@ -1,133 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Welcome!</title>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alicia's Special Batchoy - Classic Taste of Ilonggo Batchoy | Iloilo City</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-    <body>
-        <header>
-            <button class="menu-button" id="menuButton">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
 
-            <div class="welcome">
-                <div>Welcome!</div>
+  <header class="main_header">
+    <div class="site_container nav_wrapper">
+      <a href="index.html" class="brand_logo">
+        <div class="brand_title">Alicia's <span>Batchoy</span></div>
+      </a>
+      
+      <button class="mobile_toggle_btn" id="mobile_toggle_btn" aria-label="Toggle Navigation Menu">
+        <img src="icons/menu.svg" alt="Menu Icon" id="toggle_icon"> <!-- Lucide Icon: menu -->
+      </button>
+
+      <nav>
+        <ul class="nav_menu" id="nav_menu">
+          <li><a href="index.html" class="nav_link active">Home</a></li>
+          <li><a href="about_us.html" class="nav_link">About Us</a></li>
+          <li><a href="our_menu.html" class="nav_link">Menu & Products</a></li>
+          <li><a href="contact_us.html" class="nav_link">Contact & Locations</a></li>
+          <li><a href="our_menu.html" class="nav_cta_btn">Order Now</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <main>
+    <section class="hero_section">
+      <div class="site_container hero_grid">
+        <div class="hero_content">
+          <span class="hero_badge">Sabaw na Mainit, Putong Masarap!</span>
+          <h1>Bringing Back the Classic Taste of Ilonggo Batchoy</h1>
+          <p>Experience authentic Iloilo heritage with our signature rich broth, fresh noodles, chicharon, and classic pairings across our 4 prime locations.</p>
+          <p class="hero_price_note">Super Batchoy ₱140 · Extra Batchoy ₱150</p>
+          <div class="hero_actions">
+            <a href="our_menu.html" class="btn_primary">
+              <img src="icons/shopping_bag.svg" alt="Order Icon" style="width:20px;"> <!-- Lucide Icon: shopping-bag -->
+              Explore Menu
+            </a>
+            <a href="contact_us.html" class="btn_secondary">
+              <img src="icons/map_pin.svg" alt="Location Icon" style="width:20px;"> <!-- Lucide Icon: map-pin -->
+              Find a Branch
+            </a>
+          </div>
+        </div>
+        <div class="hero_image_wrapper">
+          <img src="assets/batchoy_special.jpg" alt="Alicia's Special Batchoy storefront with fresh ingredient display">
+        </div>
+      </div>
+    </section>
+
+    <section class="section_padding">
+      <div class="site_container">
+        <div class="section_header">
+          <h2>Our Signature Ilonggo Specialties</h2>
+          <p>Prepared daily with traditional ingredients, rich marrow broth, and custom noodle choices.</p>
+        </div>
+
+        <div class="cards_grid_3">
+          <article class="card_item">
+            <img src="assets/batchoy_special.jpg" alt="Alicia's Special Super Batchoy" class="card_img_top">
+            <div class="card_body">
+              <div class="card_title">
+                <h3>Super Batchoy</h3>
+                <span class="card_price">₱140.00</span>
+              </div>
+              <p>Generous bowl loaded with fresh noodles, pork liver, cracklings, and rich hot soup. Paired perfectly with banana-leaf puto.</p>
+              <a href="our_menu.html" class="btn_secondary" style="margin-top:auto;">View Details</a>
             </div>
+          </article>
 
-            <a href="contact-us.html" class="header-contact"><img src="icons/phone.svg" class="nav-icon-header" alt=""> Contact Us</a>
-        </header>
-
-        <aside class="sidebar" id="sidebar">
-            <div class="sidebar-title"><img src="icons/telescope.svg" class="nav-icon" alt="">EXPLORE</div>
-        
-            <a href="index.html"><img src="icons/house.svg" class="nav-icon" alt=""> Home</a>
-            <a href="about-us.html"><img src="icons/info.svg" class="nav-icon" alt=""> About Us</a>
-            <a href="gallery.html"><img src="icons/image.svg" class="nav-icon" alt=""> Gallery</a>
-            <a href="services.html"><img src="icons/concierge-bell.svg" class="nav-icon" alt=""> Our Services</a>
-        </aside>
-        
-                <main>
-                    <section class="hero">
-                        <div class="hero-content">
-                            <div class="small-label">IGBARAS • ILOILO</div>
-        
-                            <h2>Welcome to</h2>
-        
-                            <h1>Imbalayan<br>Binanua-an Igbaras</h1>
-        
-                            <h2>Resort</h2>
-        
-                            <div class="description">
-                                A mountainous campsite and resort in Igbaras.
-                            </div>
-        
-                            <div class="hero-button">
-                                <a href="about-us.html">check us out!</a>
-                            </div>
-                        </div>
-                    </section>
-        
-                    <section class="info-section">
-                        <div class="section-heading">
-                            <span>01</span>
-                            <h2>Experience Nature</h2>
-                        </div>
-        
-                        <div class="image-grid">
-                            <div class="image-card large">
-                                <img src="assets/A4.JPG" alt="Mountain in Igbaras">
-                                <div class="image-text">
-                                    <span>IGBARAS</span>
-                                    <h3>Mountain Views</h3>
-                                </div>
-                            </div>
-        
-                            <div class="image-card">
-                                <img src="assets/A5.jpg" alt="Tangyan River in Igbaras">
-                                <div class="image-text">
-                                    <span>TANGYAN RIVER</span>
-                                    <h3>Into the Wild</h3>
-                                </div>
-                            </div>
-        
-                            <div class="nature-box">
-                                <div class="nature-icon">✦</div>
-                                <h3>Escape the ordinary.</h3>
-                                <p>
-                                    Relax, explore, and reconnect with the mountains
-                                    and natural surroundings of Binanua-an.
-                                </p>
-                                <a href="#">discover more</a>
-                            </div>
-                        </div>
-                    </section>
-                </main>
-
-        <footer>
-            <h2>Check out our other stuff!</h2>
-
-            <p>
-                &copy; 2026 Binanua-an Eco Camp, Igbaras, Iloilo.
-                All rights reserved.
-            </p>
-
-            <div class="socials">
-                <a href="https://www.facebook.com/Binanuaanecofarm/" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/A1.png" alt="Facebook">
-                </a>
-
-                <a href="https://www.youtube.com/watch?v=aeQojySfJEA/" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/A2.png" alt="YouTube">
-                </a>
-
-                <a href="https://www.google.com/maps/place/Imbalayan+binanua-an+igbaras+resort/@10.7378052,122.224213,13.26z/data=!4m6!3m5!1s0x33ae51737d3b9097:0x54186dad46b9d68!8m2!3d10.7543418!4d122.2387204!16s%2Fg%2F11h4k6rx_f!18m1!1e3?entry=ttu" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/A3.png" alt="Google Maps">
-                </a>
+          <article class="card_item">
+            <img src="assets/lutong_bahay_specials.jpg" alt="Daily Lutong Bahay Specials" class="card_img_top">
+            <div class="card_body">
+              <div class="card_title">
+                <h3>Daily Lutong Bahay</h3>
+                <span class="card_price">From ₱50.00</span>
+              </div>
+              <p>Rotating regional Ilonggo comforting dishes including KBL, Laswa, Monggo may Gata, and Fried Bangus.</p>
+              <a href="our_menu.html" class="btn_secondary" style="margin-top:auto;">View Daily Schedule</a>
             </div>
-        </footer>
+          </article>
 
-    <script>
-    const menuButton = document.getElementById("menuButton");
-    const sidebar = document.getElementById("sidebar");
+          <article class="card_item">
+            <img src="assets/pastillas_jar.jpg" alt="Alicia Special Delicacies" class="card_img_top">
+            <div class="card_body">
+              <div class="card_title">
+                <h3>Confectionery Delicacies</h3>
+                <span class="card_price">₱150.00</span>
+              </div>
+              <p>Take home our sweet, creamy Pastillas, colorful Pastimallows, fiery Chili Sauce, and toasted Cashews.</p>
+              <a href="our_menu.html" class="btn_secondary" style="margin-top:auto;">Shop Delicacies</a>
+            </div>
+          </article>
+        </div>
 
-    menuButton.addEventListener("click", () => {
-        sidebar.classList.toggle("open");
-    });
 
-    document.addEventListener("click", (event) => {
-        if (
-            sidebar.classList.contains("open") &&
-            !sidebar.contains(event.target) &&
-            !menuButton.contains(event.target)
-        ) {
-            sidebar.classList.remove("open");
-        }
-    });
-    </script>
-    </body>
+        <div class="weather_banner">
+          <div>
+            <h3>Stormy Skies? We've Got You Covered!</h3>
+            <p>All Alicia's branches remain operational during rainy weather. Enjoy hot soup delivered directly to your doorstep via GRAB.</p>
+          </div>
+          <a href="contact_us.html" class="btn_primary" style="background-color:#FFFFFF; color:var(--accent_pink); white-space:nowrap;">
+            <img src="icons/truck.svg" alt="Delivery Icon" style="width:20px;"> <!-- Lucide Icon: truck -->
+            Order via Grab
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="site_footer">
+    <div class="site_container footer_grid">
+      <div class="footer_col">
+        <h4>Alicia's Special Batchoy</h4>
+        <p style="color:#94A3B8;">Serving authentic Ilonggo Batchoy, everyday homestyle meals, car wash services, and specialty delicacies in Iloilo City.</p>
+      </div>
+      <div class="footer_col">
+        <h4>Quick Links</h4>
+        <ul class="footer_links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="our_menu.html">Menu & Products</a></li>
+          <li><a href="contact_us.html">Contact & Locations</a></li>
+        </ul>
+      </div>
+      <div class="footer_col">
+        <h4>Branch Contacts</h4>
+        <ul class="footer_links">
+          <li>Jaro: +63 999 880 5529</li>
+          <li>La Paz: +63 939 989 3302</li>
+          <li>Arevalo: +63 999 885 9688</li>
+          <li>Smallville: +63 947 898 4117</li>
+        </ul>
+      </div>
+      <div class="footer_col">
+        <h4>Main Location</h4>
+        <p style="color:#94A3B8;">Washington St. Brgy. Democracia, Jaro, Iloilo City</p>
+        <p style="color:#94A3B8;">Landline: (033) 338 9711</p>
+      </div>
+    </div>
+    <div class="footer_bottom">
+      <p>&copy; 2026 Alicia's Special Batchoy. Developed for CCS 222 Web Design and Development | West Visayas State University.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
 </html>
