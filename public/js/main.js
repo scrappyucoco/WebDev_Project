@@ -96,6 +96,12 @@ document.addEventListener('DOMContentLoaded', () => {
         filterMenuItems();
       });
     });
+
+    const requestedFilter = window.location.hash.slice(1);
+    const requestedFilterBtn = document.getElementById(requestedFilter);
+    if (requestedFilterBtn && requestedFilterBtn.classList.contains('filter_btn')) {
+      requestedFilterBtn.click();
+    }
   }
 
   if (searchInput) {
@@ -160,8 +166,8 @@ document.addEventListener('DOMContentLoaded', () => {
         phone: '+63 999 880 5529',
         hours: '7:00 AM – 8:30 PM',
         placeId: 'ChIJo-Rcjt_krjMRBcx5Ct4SNIY',
-        peakSummary: '11:30 AM – 1:30 PM & 6:00 PM – 8:00 PM',
-        peaks: [[11.5, 13.5], [18, 20]],
+        peakSummary: '12:00 PM – 2:00 PM & 5:00 PM – 8:00 PM',
+        peaks: [[12, 14], [17, 20]],
         mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.0887488709322!2d122.5580657!3d10.727638100000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33aee4df8e5ce4a3%3A0x863412de0a79cc05!2sAlicia's%20Restaurant%20%26%20Catering!5e0!3m2!1sen!2sph!4v1795422888259!5m2!1sen!2sph"
       },
       lapaz: {
@@ -170,8 +176,8 @@ document.addEventListener('DOMContentLoaded', () => {
         phone: '+63 939 989 3302',
         hours: '7:00 AM – 8:00 PM',
         placeId: 'ChIJQ8u_u-LlrjMRF7ykE2KFggE',
-        peakSummary: '11:30 AM – 1:30 PM & 6:00 PM – 7:30 PM',
-        peaks: [[11.5, 13.5], [18, 19.5]],
+        peakSummary: '1:00 PM – 2:00 PM & 4:00 PM – 6:00 PM',
+        peaks: [[13, 14], [16, 18]],
         mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.284057977187!2d122.56762157582476!3d10.712559789432447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33aee5e2bbbfcb43%3A0x182856213a4bc17!2sALICIA%20BATCHOY%20LAPAZ%20BRANCH!5e0!3m2!1sen!2sph!4v1795422969778!5m2!1sen!2sph"
       },
       smallville: {
@@ -180,8 +186,8 @@ document.addEventListener('DOMContentLoaded', () => {
         phone: '+63 947 898 4117',
         hours: '7:00 AM – 11:00 PM',
         placeId: 'ChIJmUz1KADlrjMRCGxobjWcFb8',
-        peakSummary: '12:00 PM – 2:00 PM & 7:00 PM – 9:30 PM',
-        peaks: [[12, 14], [19, 21.5]],
+        peakSummary: '12:00 PM – 2:00 PM & 5:00 PM – 9:00 PM',
+        peaks: [[12, 14], [17, 21]],
         mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.3838490283015!2d122.5486546758239!3d10.704847589439378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33aee50028f54c99%3A0xbf159c356e686c08!2sAlicia's%20Special%20Batchoy%20Smallville!5e0!3m2!1sen!2sph!4v1795422986614!5m2!1sen!2sph"
       },
       arevalo: {
@@ -190,8 +196,8 @@ document.addEventListener('DOMContentLoaded', () => {
         phone: '+63 999 885 9688',
         hours: '7:00 AM – 7:00 PM',
         placeId: 'ChIJGUmZJQDxrjMRdW8j7Vsvtko',
-        peakSummary: '11:00 AM – 1:00 PM & 5:30 PM – 7:00 PM',
-        peaks: [[11, 13], [17.5, 19]],
+        peakSummary: '10:00 AM – 12:00 PM & 3:00 PM – 6:00 PM',
+        peaks: [[10, 12], [15, 18]],
         mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2186.132888573816!2d122.51548731323265!3d10.672566005497389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33aef10025994919%3A0x4ab62f5bed236f75!2sAlicia%20Special%20Batchoy%20Villa%20Arevalo%20Branch!5e0!3m2!1sen!2sph!4v1795433974043!5m2!1sen!2sph"
       }
     };

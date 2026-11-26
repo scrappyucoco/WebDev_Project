@@ -29,6 +29,7 @@
 }
 
 html {
+  
   scroll-behavior: smooth;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   color: var(--text_main);
@@ -37,9 +38,34 @@ html {
 }
 
 body {
+  position: relative;
+  isolation: isolate;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-color: var(--bg_main);
+  background-image:
+    linear-gradient(rgba(0, 153, 68, 0.3) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 153, 68, 0.3) 1px, transparent 1px),
+    linear-gradient(rgba(247, 25, 137, 0.14) 0.5px, transparent 0.5px),
+    linear-gradient(90deg, rgba(247, 25, 137, 0.14) 0.5px, transparent 0.5px);
+  background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
+  background-position: -1px -1px, -1px -1px, -0.5px -0.5px, -0.5px -0.5px;
+  opacity: 0.8;
+  mask-image: radial-gradient(ellipse at center, transparent 40%, rgba(0, 0, 0, 0.6) 100%);
+  -webkit-mask-image: radial-gradient(ellipse at center, transparent 40%, rgba(0, 0, 0, 0.6) 100%);
+  mask-size: 100% 100%;
+  -webkit-mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
 }
 
 /* Typography Hierarchy */
@@ -98,8 +124,8 @@ a:hover {
   align-items: center;
   gap: 0.75rem;
   font-weight: 800;
-  font-size: 1.35rem;
-  color: var(--primary_green);
+  font-size: 1.5rem;
+  color: var(--accent_pink);
 }
 
 .brand_logo img {
@@ -109,7 +135,7 @@ a:hover {
 }
 
 .brand_title span {
-  color: var(--accent_pink);
+  color: var(--primary_green);
 }
 
 .nav_menu {
@@ -1227,7 +1253,6 @@ a:hover {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
-
 @media (max-width: 992px) {
   .hero_grid,
   .branch_finder_grid,
@@ -1280,7 +1305,7 @@ a:hover {
 
   .nav_menu.active {
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
   }
 
   .weather_banner {
